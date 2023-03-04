@@ -34,21 +34,21 @@ public class Payroll {
 	pay rate.
 		
 	*/
-
+	// create arrays
 	static int[] employeeId = { 5658845, 4520125, 7895122, 8777541, 8451277, 1302850, 7580489 };
 	static int[] hours = new int[7];
 	static double[] payRate = new double[7];
 	double[] wages = new double[7];
 
-	public static void setHours(int index, int hour) {
+	public static void setHours(int index, int hour) { // setter for hour
 		hours[index] = hour;
 	}
 
-	public static void setPayRate(int index, double payR) {
+	public static void setPayRate(int index, double payR) { // setter for pay rate
 		payRate[index] = payR;
 	}
 
-	public static int getIndex(int empId) {
+	public static int getIndex(int empId) { // method to get index of the employeeId taken as an argument
 		int index = 0;
 		for (int i = 0; i < employeeId.length; i++) {
 			if (empId == employeeId[i]) {
@@ -71,7 +71,7 @@ public class Payroll {
 
 		setHours(2, 9);
 		setPayRate(2, 10);
-		System.out.println(getGrossPay(7895122));
+		System.out.println(getGrossPay(7895122)); // checking the program with an example
 
 	}
 	
