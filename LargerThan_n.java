@@ -15,7 +15,7 @@ public class LargerThan_n {
 	public static void bigger(int[] arr1, int n) {
 		for (int i = 0; i<arr1.length; i++) {
 			if (arr1[i] > n){ // checking if element is bigger than n
-				System.out.print(arr1[i]+" "); // if yes, printing it ] with a space in between
+				System.out.print(arr1[i]+" "); // if yes, printing it with a space in between
 			}
 		}
 	}
